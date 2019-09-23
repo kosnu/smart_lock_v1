@@ -11,12 +11,11 @@ def startup(targets):
 def connected(tag):
     print("> connected!")
     if tag.ndef:
-        for i in range(1):
-            servo.ChangeDutyCycle(2.5)
-            time.sleep(0.5)
+        servo.ChangeDutyCycle(2.5)
+        time.sleep(0.5)
 
-            servo.ChangeDutyCycle(12)
-            time.sleep(0.5)
+        servo.ChangeDutyCycle(12)
+        time.sleep(0.5)
     return True
 
 
